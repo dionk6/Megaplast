@@ -143,11 +143,11 @@
             </div><!--end .col-md-6-->
             <div class="col-md-6">
                 <div class="contact-right contact-right-style-2 responsive_mt">
-                    <form action="#" method="post">
-                        <input type="text" name="name" placeholder="Your name">
-                        <input type="EMAIL" name="email" placeholder="Email address">
-                        <textarea name="content" id="content" cols="20" rows="5" placeholder="Write message"></textarea>
-                        <button class="btn-yellow" value="SUBMIT NOW">SEND</button>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <input type="EMAIL" id="email" name="email" placeholder="Email address">
+                        <textarea name="content"  id="message" cols="20" rows="5" placeholder="Write message"></textarea>
+                        <button class="btn-yellow" type="submit">SEND</button>
                     </form>
                 </div><!--end .contact-right .contact-right-style-2-->
             </div><!--end .col-md-6-->
@@ -162,7 +162,8 @@
         Start Map
 ===========================-->
 <div class="map_section">
-    <div id="map"></div>
+    <img style="width: 100%;" src="/assets/images/map.jpg" alt="">
+    <!-- <div id="map"></div> -->
 </div><!--end .map_section-->
 <!--===========================
         End Map
@@ -176,12 +177,12 @@
         <div class="container">
             <div class="col-md-4 col-sm-4">
                 <div class="footer_contact_width text-left">
-                    <p><i class="icon-placeholder"></i> Address <span>66 Broklyn Street, New York</span></p>
+                    <p><i class="icon-placeholder"></i> Address <span>Richard Hollbruk, Veternik Prishtine</span></p>
                 </div><!--end .footer_contact_width-->
             </div><!--end .col-md-4-->
             <div class="col-md-4 col-sm-4">
                 <div class="footer_contact_width">
-                    <p><i class="icon-contact"></i> Email <span><a href="mailto:layerdrops@gmail.com">help@loazzne.com</a></span></p>
+                    <p><i class="icon-contact"></i> Email <span><a href="mailto:megaplastgroup.ks@gmail.com">megaplastgroup.ks@gmail.com</a></span></p>
                 </div><!--end .footer_contact_width-->
             </div><!--end .col-md-4-->
             <div class="col-md-4 col-sm-4">
@@ -191,7 +192,6 @@
             </div><!--end .col-md-4-->
         </div><!--end .container-->
     </div><!--end .footer_contact-->
-    
     <img src="assets/images/shape/footer-shape.png" class="footer_shape" alt="footer shape">
 </footer><!--end .footer_area-->
 <!--===========================
@@ -209,6 +209,22 @@
 <script src="assets/js/custom-map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Agsvf36du-7l_mp8iu1a-rXoKcWfs2I"></script>
 <script src="assets/js/custom.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "ushtrimeemail@gmail.com",
+            Password : "E7731AE9A7470CF2417AC3E84E2BA3224F75",
+            To : 'ushtrimeemail@gmail.com',
+            From : 'ushtrimeemail@gmail.com',
+            Subject : "New Contact From Megaplast",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+    );
+    }
+</script>
 
 </body>
 </html>
