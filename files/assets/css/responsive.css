@@ -1352,6 +1352,34 @@
         font-size: 18px;
     }
 }
+/* Dion */
+@media only screen and (max-width: 767px) {
+    .columnCalc{
+        margin-top: 40px;
+        height: 400px;
+        flex-direction: column;
+    }
+    .equalDiv {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .calcDescription{
+        height: auto;
+    }
+    .mainCalcDiv{
+        padding: 0px;
+    }
+    .calcRightSide{
+        padding-left: 15px;
+    }
+    .calcInputs{
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px;
+    }
+  }
 /* Responsive Devise For iPad */
 @media (min-width: 768px) and (max-width: 991px) {
     .call_to_action .btn-gray {

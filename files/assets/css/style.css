@@ -2775,7 +2775,36 @@ input.half_width {
     text-shadow: 2px 2px 15px #000;
 }
 
+.mainCalcDiv{
+    padding: 61px;
+    border-radius: 20px; 
+    background-color: #e9e9e9;
+    box-shadow: 5px 10px 18px #888888;
+}
 
+.columnCalc{
+    height: 250px;
+}
+
+.calcDescription {
+    height: 250px;
+}
+.calcRightSide{
+    padding-left: 40px;
+}
+
+.calcInputs{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    justify-content: space-between;
+    
+}
+
+/* Dion */
+.equalDiv{
+    padding: 0px 30px;
+}
 
 @-webkit-keyframes rotate {
     0%{
