@@ -1382,6 +1382,11 @@
     .bgSize{
         background-size: contain;
     }
+
+    .displayColumn{
+        display: flex;
+        flex-direction: column;
+    }
   }
 /* Responsive Devise For iPad */
 @media (min-width: 768px) and (max-width: 991px) {
