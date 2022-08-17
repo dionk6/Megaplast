@@ -1379,6 +1379,9 @@
         align-items: center;
         margin: 50px 0px;
     }
+    .bgSize{
+        background-size: contain;
+    }
   }
 /* Responsive Devise For iPad */
 @media (min-width: 768px) and (max-width: 991px) {
