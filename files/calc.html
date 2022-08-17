@@ -159,7 +159,7 @@
                 </div>
                 <div class="calcInputs">
                     <div>
-                        <input type="text" id="inputValue" style="width: 140px;padding: 14px 0px 14px 15px;background-color: #f1f1f1;border-radius: 10px;color: #247C7A;font-size: 20px;" placeholder="Enter here">
+                        <input type="number" id="inputValue" style="width: 140px;padding: 14px 0px 14px 15px;background-color: #f1f1f1;border-radius: 10px;color: #247C7A;font-size: 20px;" placeholder="Enter here">
                         <span style="font-size: 20px;color: #247C7A;">m&sup2;</span>
                     </div>
                     <div>
@@ -205,7 +205,7 @@
 ===========================-->
     <script>
         document.getElementById("inputValue").addEventListener("keyup", myFunction);
-
+        document.getElementById("inputValue").addEventListener("mouseup", myFunction);
         function myFunction() {
             var x = document.getElementById("inputValue");
             let nr = Number(x.value);
